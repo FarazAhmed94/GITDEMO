@@ -1,5 +1,7 @@
 const { test, expect } = require('@playwright/test');
 
+// This is my first program
+
 test.describe('Basic Playwright Demo', () => {
 
   test('should load a page and check the title', async ({ page }) => {
@@ -19,5 +21,7 @@ test.describe('Basic Playwright Demo', () => {
     await page.locator('#userPassword').fill('SamplePass123');
     await expect(page.locator('#userEmail')).toHaveValue('test@example.com');
   });
+
+  console.log("This is my First Program");
 
 });
